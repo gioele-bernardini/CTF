@@ -1,0 +1,7 @@
+nota bene!
+alcune CTF sono a proposito di git!
+ovviamente risolta la challenge ho dovuto cancellare le folder .git per poter pushare su github!
+le note spiegano comunque tutto (dovrebbero almeno!)
+
+rm -r .git
+
