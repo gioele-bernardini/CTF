@@ -1,9 +1,0 @@
-find . -name "nome_del_file"
-grep -r "pico"*
-
-grep -r "manual"* / per cercare su una folder specifica
-
-ricorda il manuale => man <nome_del_file>
-
-cyberchef per le varie conversioni
-molto utile, ricorda il drag and drop e la funzione "magic"
