@@ -1,2 +1,0 @@
-# picoCTF-solved
-picoCTF exercises
