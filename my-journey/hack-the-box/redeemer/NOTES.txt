@@ -1,6 +1,0 @@
-approccio con REDIS, database relazionale in memoria
-redis-cli -h {ip}
-info
-select 0
-keys *
-get {key}
