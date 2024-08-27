@@ -6,13 +6,16 @@ int length(char* array) {
   int i = 0;
   while (array[i] != '\0')
     i++;
-
   return i;
 }
 
 void decode_string(char* array) {
   for (int i = 0; i < length(array); i++) {
-    array[i] -= DELTA;
+    if (array[i] >= 'a' && array[i] <= 'z') {
+      array[i] = ((array[i] - 'a' - DELTA + 26) % 26) + 'a';
+    } else if (array[i] >= 'A' && array[i] <= 'Z') {
+      array[i] = ((array[i] - 'A' - DELTA + 26) % 26) + 'A';
+    }
   }
 }
 
