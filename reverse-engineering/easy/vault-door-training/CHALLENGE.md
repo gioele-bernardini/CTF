@@ -12,3 +12,7 @@ The source code for the training vault is here: VaultDoorTraining.java
 
 You will then be provided with the Java file itself.
 
+## Hints
+
+The password is revealed in the program's source code.
+
