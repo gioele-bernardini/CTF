@@ -12,7 +12,11 @@ counter_file=".counter.txt"
 # Check if the counter file already exists
 if [ ! -f "$counter_file" ]; then
   echo 0 > "$counter_file"
+  sudo chattr +i "$counter_file"
 fi
+
+# Remove immutability to update the file
+sudo chattr -i "$counter_file"
 
 # Read the current value of the counter
 count=$(cat "$counter_file")
@@ -22,6 +26,9 @@ count=$((count + 1))
 
 # Write the new value to the file
 echo "$count" > "$counter_file"
+
+# Reapply immutability to the file
+sudo chattr +i "$counter_file"
 
 echo "CTF solved: $count"
 
