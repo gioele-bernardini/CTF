@@ -21,7 +21,7 @@ sudo chattr -i .counter.txt
 
 This will allow you to make changes to the file.
 
-## Challenge Status Indicators
+### Challenge Status Indicators
 
 Within each challenge folder, if the challenge is incomplete, a file named `NOT_COMPLETED` will be present.
 To list all the incomplete challenges, run the following command from the parent directory:
