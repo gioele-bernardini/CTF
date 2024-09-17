@@ -8,7 +8,7 @@
 
 This repository is regularly updated as new challenges are completed.
 
-### Usage
+## Usage
 
 Feel free to explore the repository and review the challenges I have tackled. A hidden file (`.counter.txt`) is located in the parent directory.
 This file is protected by an immutability flag, which prevents modifications unless the flag is removed, even with superuser privileges.
