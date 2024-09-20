@@ -2,7 +2,9 @@
 
 ## Description
 
+```
 I wonder what this really is...
+```
 
 You are provided with an encoded string:
 
@@ -18,5 +20,6 @@ The following code - apparently Python - is provided too:
 
 ## Hints
 
+```
 You may find some decoders online.
-
+```
