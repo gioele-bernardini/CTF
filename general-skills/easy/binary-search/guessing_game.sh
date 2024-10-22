@@ -16,27 +16,27 @@ MAX_GUESSES=10
 guess_count=0
 
 while (( guess_count < MAX_GUESSES )); do
-    read -p "Enter your guess: " guess
+  read -p "Enter your guess: " guess
 
-    if ! [[ "$guess" =~ ^[0-9]+$ ]]; then
-        echo "Please enter a valid number."
-        continue
-    fi
+  if ! [[ "$guess" =~ ^[0-9]+$ ]]; then
+    echo "Please enter a valid number."
+    continue
+  fi
 
-    (( guess_count++ ))
+  (( guess_count++ ))
 
-    if (( guess < target )); then
-        echo "Higher! Try again."
-    elif (( guess > target )); then
-        echo "Lower! Try again."
-    else
-        echo "Congratulations! You guessed the correct number: $target"
+  if (( guess < target )); then
+    echo "Higher! Try again."
+  elif (( guess > target )); then
+    echo "Lower! Try again."
+  else
+    echo "Congratulations! You guessed the correct number: $target"
 
-        # Retrieve the flag from the metadata file
-        flag=$(cat /challenge/metadata.json | jq -r '.flag')
-        echo "Here's your flag: $flag"
-        exit 0  # Exit with success code
-    fi
+    # Retrieve the flag from the metadata file
+    flag=$(cat /challenge/metadata.json | jq -r '.flag')
+    echo "Here's your flag: $flag"
+    exit 0  # Exit with success code
+  fi
 done
 
 # Player has exceeded maximum guesses
