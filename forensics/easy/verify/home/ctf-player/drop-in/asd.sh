@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Enable debug for the script
+# set -x
+
 # Read the target checksum from checksum.txt
 target=$(cat checksum.txt)
 
@@ -17,8 +20,11 @@ for file in files/*; do
   if [[ "$target" == "$guess" ]]; then
     echo "Match found for file: $file"
     echo "Initiating decryption script..."
+    # Empty line
+    echo
+
     ./decrypt.sh "$file"
-    echo "Decryption completed successfully."
+    # echo "Decryption completed successfully."
     exit 0
   fi
 done
