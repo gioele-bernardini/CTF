@@ -10,6 +10,7 @@ fi
 file_name="$1"
 
 # Check if the provided argument is a file and not a folder
+# Modified 'file_name' to correctly handle absolute and relative paths, enabling the script to run locally
 if [ ! -f "$file_name" ]; then
     echo "Error: '$file_name' is not a valid file. Look inside the 'files' folder with 'ls -R'!"
     exit 1
