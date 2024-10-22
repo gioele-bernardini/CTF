@@ -4,7 +4,7 @@
 
 This challenge is a bit vague. There is a reference to verifying something using an **SHA-256 checksum**, along with a decryption script.
 
-Upon inspecting the `folder/`, we find nearly 300 files inside, suggesting the possibility of a **brute-force approach**. After reflecting on the problem and understanding that SHA-256 is an injective and non-invertible hash function, it becomes clear that the provided hash must be compared against the hash values of the files in the folder.
+Upon inspecting the `folder/`, we find more than 300 files inside, suggesting the possibility of a **brute-force approach**. After reflecting on the problem and understanding that SHA-256 is a *non-invertible* hash function, it becomes clear that the provided hash must be compared against the hash values of the files in the folder.
 
 We need to write a script that calculates the hash for each file in the folder and compares it with the hash found in `checksum.txt`. This process is quite straightforward and does not require advanced skills.
 
