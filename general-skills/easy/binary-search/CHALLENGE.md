@@ -7,6 +7,7 @@ Want to play a game? As you use more of the shell, you might be interested in ho
 ```
 
 ## Hints
+
 ```
 Have you ever played hot or cold? Binary search is a bit like that.
 ```
