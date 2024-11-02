@@ -36,3 +36,6 @@ If the `NOT_COMPLETED` file is absent, the challenge is considered **completed**
 Please note, there is no need to explicitly mark when an entire challenge category is complete.
 The focus is on **quality** and learning, not on the quantity of challenges completed or the pursuit of 100% completion.
 
+<!-- To view all executable files >
+<!-- find . -type f -exec file {} + | grep 'ELF' -->
+
