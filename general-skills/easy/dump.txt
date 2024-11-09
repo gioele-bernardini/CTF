@@ -1,3 +1,6 @@
+Here is the list of the easiest challenge, for which you might as well to pack them all in one single report and briefly cover them all together :)
+n.b. counter has *NOT* been updated yet!
+
 super-ssh
 commitment-issues
 collaborative-development
