@@ -1,6 +1,7 @@
 a.out
 
 files/
+flag
 
 # TODO:
 # add a script to automatically adding to .gitignore
