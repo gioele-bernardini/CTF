@@ -12,14 +12,14 @@ int main(int argc, char** argv) {
 
   // Big Endian
   for (size_t i = 0; i < len; i++) {
-    printf("\\x%02x", (unsigned char)argv[1][i]);
+    printf("%02x", (unsigned char)argv[1][i]);
   }
 
   printf("\n\n");
 
   // Little Endian
   for (int i = (int)len - 1; i >= 0; i--) {
-    printf("\\x%02x", (unsigned char)argv[1][i]);
+    printf("%02x", (unsigned char)argv[1][i]);
   }
 
   printf("\n");
