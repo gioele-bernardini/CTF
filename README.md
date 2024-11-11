@@ -1,6 +1,3 @@
-![CTF Completi](https://img.shields.io/badge/CTF-42-brightgreen)
-
-
 # PicoCTF Challenges Archive
 
 **A repository containing all materials related to PicoCTF challenges, categorized and documented.**
