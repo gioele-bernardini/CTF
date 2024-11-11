@@ -7,6 +7,7 @@
 ⚠️ **Work in Progress** ⚠️
 
 This repository is regularly updated as new challenges are completed.
+My older write-ups might be a bit rough: it's part of the process to also learn to write better ones and in my own style!
 
 ## Usage
 
