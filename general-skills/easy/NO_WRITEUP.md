@@ -36,6 +36,7 @@ This report summarizes a set of Capture The Flag (CTF) challenges deemed too sim
 - **lets-warm-up**
 - **pw-crack-1**
 - **pw-crack-2**
+- **time-machine**
 
 Each of these challenges was completed efficiently, with *minimal complexity*, rendering a full report superfluous. Future reports will focus on more challenging tasks that require in-depth analysis and explanation.
 
