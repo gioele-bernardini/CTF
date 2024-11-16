@@ -2,6 +2,9 @@
 
 **A repository containing all materials related to PicoCTF challenges, categorized and documented.**
 
+<!-- CTF_BADGE -->
+![CTF Solved](https://img.shields.io/badge/CTF%20Solved-0-blue)
+
 ## Project Status
 
 ⚠️ **Work in Progress** ⚠️
@@ -12,7 +15,7 @@ This repository is regularly updated as new challenges are completed.
 
 My older write-ups might be a bit rough; it's part of the process to learn how to write better ones and develop my own style!
 
-In particular, the oldest solved challenges have two markdown files in their respective folders: one for the challenge description (`CHALLENGE.md`) and another for the write-up itself (`WRITEUP.md`). I realized that this approach was redundant and unnecessarily increased the workload. Additionally, the write-ups were of very poor quality.
+In particular, the oldest solved challenges have two markdown files in their respective folders: one for the challenge description (`CHALLENGE.md`) and another for the write-up itself (`WRITEUP.md`). I realized that this approach was redundant and unnecessarily increased the workload. Additionally, the write-ups were of poor quality.
 
 In the challenges I solved later, I decided to create *one single file* (`WRITEUP.md`) where I included the description, my considerations, useful sources and links I used to learn and, last but not least, the write-up itself.
 

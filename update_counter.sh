@@ -7,7 +7,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Counter file
-counter_file=".counter.txt"
+counter_file=".COUNTER"
 
 # Check if the counter file already exists
 if [ ! -f "$counter_file" ]; then
@@ -15,13 +15,9 @@ if [ ! -f "$counter_file" ]; then
   sudo chattr +i "$counter_file"
 fi
 
-# Remove immutability to update the file
 sudo chattr -i "$counter_file"
 
-# Read the current value of the counter
 count=$(cat "$counter_file")
-
-# Increment the counter by 1
 count=$((count + 1))
 
 # Write the new value to the file
@@ -31,4 +27,22 @@ echo "$count" > "$counter_file"
 sudo chattr +i "$counter_file"
 
 echo "CTF solved: $count"
+
+# Path to README.md (modify if necessary)
+readme_file="README.md"
+
+# Check if README.md exists
+if [ ! -f "$readme_file" ]; then
+  echo "Error: $readme_file not found!" >&2
+  exit 1
+fi
+
+# Generate the new badge URL using Shields.io
+badge="![CTF Solved](https://img.shields.io/badge/CTF%20Solved-$count-blue)"
+
+# Replace the existing badge in README.md
+# Ensure the badge is preceded by the placeholder <!-- CTF_BADGE -->
+sed -i "s|!\[CTF Solved\](https://img\.shields\.io/badge/CTF%20Solved-[0-9]\+-blue)|$badge|" "$readme_file"
+
+echo "Badge updated in $readme_file"
 
