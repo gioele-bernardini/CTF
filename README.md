@@ -7,7 +7,16 @@
 ⚠️ **Work in Progress** ⚠️
 
 This repository is regularly updated as new challenges are completed.
-My older write-ups might be a bit rough: it's part of the process to also learn to write better ones and in my own style!
+
+## About the write-ups
+
+My older write-ups might be a bit rough; it's part of the process to learn how to write better ones and develop my own style!
+
+In particular, the oldest solved challenges have two markdown files in their respective folders: one for the challenge description (`CHALLENGE.md`) and another for the write-up itself (`WRITEUP.md`). I realized that this approach was redundant and unnecessarily increased the workload. Additionally, the write-ups were of very poor quality.
+
+In the challenges I solved later, I decided to create *one single file* (`WRITEUP.md`) where I included the description, my considerations, useful sources and links I used to learn and, last but not least, the write-up itself.
+
+Most of the "old" challenges mentioned above fall into the categories of *general skills* and the easy/medium section of *binary exploitation*, as those were the very first topics I started with.
 
 ## Usage
 
