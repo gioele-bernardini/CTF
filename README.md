@@ -16,7 +16,7 @@ In particular, the oldest solved challenges have two markdown files in their res
 
 In the challenges I solved later, I decided to create *one single file* (`WRITEUP.md`) where I included the description, my considerations, useful sources and links I used to learn and, last but not least, the write-up itself.
 
-Most of the "old" challenges mentioned above fall into the categories of *general skills* and the easy/medium section of *binary exploitation*, as those were the very first topics I started with.
+Most of the "old" challenges mentioned above fall into the categories of *general skills* and the easy/medium section of *binary exploitation*.
 
 ### Challenge Status Indicators
 
