@@ -1,41 +1,45 @@
 #!/bin/bash
 
-# Check if the script is being run as root
-if [ "$EUID" -ne 0 ]; then
-  echo "Error: This script must be run as root (sudo)." >&2
-  exit 1
-fi
-
-# Counter file
-counter_file=".COUNTER"
-
-# Check if the counter file already exists
-if [ ! -f "$counter_file" ]; then
-  echo 0 > "$counter_file"
-fi
-
-count=$(cat "$counter_file")
-count=$((count + 1))
-
-# Write the new value to the file
-echo "$count" > "$counter_file"
-echo "CTF solved: $count"
-
-# Path to README.md (modify if necessary)
-readme_file="README.md"
+# Path to README.md
+README_FILE="README.md"
 
 # Check if README.md exists
-if [ ! -f "$readme_file" ]; then
-  echo "Error: $readme_file not found!" >&2
+if [ ! -f "$README_FILE" ]; then
+  echo "Error: $README_FILE not found!" >&2
   exit 1
 fi
 
+# Define the badge color
+BADGE_COLOR="pink"
+
+# Extract the current count from the badge using grep and regex
+current_count=$(grep -oP "(?<=CTF%20Solved-)\d+(?=-$BADGE_COLOR)" "$README_FILE")
+
+# Check if the count was successfully extracted
+if [[ -z "$current_count" ]]; then
+  echo "Error: Could not find the CTF Solved badge or extract the count." >&2
+  exit 1
+fi
+
+# Increment the count
+new_count=$((current_count + 1))
+
+echo "CTF solved: $new_count"
+
 # Generate the new badge URL using Shields.io
-badge="![CTF Solved](https://img.shields.io/badge/CTF%20Solved-$count-blue)"
+new_badge="![CTF Solved](https://img.shields.io/badge/CTF%20Solved-$new_count-$BADGE_COLOR)"
 
-# Replace the existing badge in README.md
-# Ensure the badge is preceded by the placeholder <!-- CTF_BADGE -->
-sed -i "s|!\[CTF Solved\](https://img\.shields\.io/badge/CTF%20Solved-[0-9]\+-blue)|$badge|" "$readme_file"
+# Replace the old badge with the new one in README.md
+# Replace only the first occurrence
+sed -i "/!\[CTF Solved\](https:\/\/img\.shields\.io\/badge\/CTF%20Solved-$current_count-$BADGE_COLOR)/ {
+    s|!\[CTF Solved\](https://img\.shields\.io/badge/CTF%20Solved-$current_count-$BADGE_COLOR)|$new_badge|
+    q
+}" "$README_FILE"
 
-echo "Badge updated in $readme_file"
+if [[ $? -eq 0 ]]; then
+  echo "Badge updated in $README_FILE"
+else
+  echo "Error: Failed to update the badge." >&2
+  exit 1
+fi
 
