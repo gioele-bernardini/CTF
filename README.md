@@ -35,4 +35,4 @@ The focus is on **quality** and learning, not on the quantity of challenges comp
 <!-- find . -type f -exec file {} + | grep 'ELF' -->
 
 <!-- CTF_BADGE -->
-![CTF Solved](https://img.shields.io/badge/CTF%20Solved-46-pink)
+![CTF Solved](https://img.shields.io/badge/CTF%20Solved-53-pink)
