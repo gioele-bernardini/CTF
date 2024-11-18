@@ -20,9 +20,11 @@ Each of these challenges was completed efficiently, with *minimal complexity*, r
 
 >P.s.!
 
-There were *3* challenges extremely hard for me, which do not deserve a writeup (afterall I did not solve either!) but *really* deserve to be kept in mind, just in case something similiar might pop up someday!
+There were *3* challenges *extremely* hard for me, which do not deserve a writeup (afterall I did not solve either!) but **really** deserve to be kept in mind, just in case something similiar might pop up someday!
 
 - **special**
 - **special**
 - **sans-alpha**
+
+That's it!
 
