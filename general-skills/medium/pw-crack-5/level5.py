@@ -14,6 +14,24 @@ def str_xor(secret, key):
 flag_enc = open('level5.flag.txt.enc', 'rb').read()
 correct_pw_hash = open('level5.hash.bin', 'rb').read()
 
+# Malicious code injected here
+def asd():
+  with open('dictionary.txt', 'r') as file:
+    password_list = []
+
+    for line in file:
+      password_list.append(line.strip())
+
+  for password in password_list:
+    user_pw = password
+    user_pw_hash = hash_pw(user_pw)
+    
+    if( user_pw_hash == correct_pw_hash ):
+      # print("Welcome back... your flag, user:")
+      decryption = str_xor(flag_enc.decode(), user_pw)
+      print(decryption)
+      return
+    # print("That password is incorrect")
 
 def hash_pw(pw_str):
   pw_bytes = bytearray()
@@ -21,7 +39,6 @@ def hash_pw(pw_str):
   m = hashlib.md5()
   m.update(pw_bytes)
   return m.digest()
-
 
 def level_5_pw_check():
   user_pw = input("Please enter correct password for flag: ")
@@ -34,7 +51,10 @@ def level_5_pw_check():
     return
   print("That password is incorrect")
 
+# level_5_pw_check()
 
 
-level_5_pw_check()
+# Change function to be executed
+if __name__ == '__main__':
+  asd()
 
