@@ -10,7 +10,8 @@ This repository is regularly updated as new challenges are completed.
 
 ## About the write-ups
 
-My older write-ups might be a bit rough; it's part of the process to learn how to write better ones and develop my own style!
+My older write-ups might be a bit rough; it's all part of the process of learning to write better and developing my own style! 
+>The older write-ups are the ones **without** a last updated date.
 
 In particular, the oldest solved challenges have two markdown files in their respective folders: one for the challenge description (`CHALLENGE.md`) and another for the write-up itself (`WRITEUP.md`). I realized that this approach was redundant and unnecessarily increased the workload. Additionally, the write-ups were of poor quality.
 
