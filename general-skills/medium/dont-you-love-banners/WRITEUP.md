@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Solution
 
 ## Explanation
@@ -23,4 +25,3 @@ Here's how to do it:
     ```
 
 That's it! After creating the symlink, reconnect to the server, and instead of displaying the usual banner, the script will output the flag.
-

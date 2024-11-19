@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Writeup
 
 ## Explanation
@@ -94,4 +96,3 @@ print(decoded_flag)
 Running the code above will reveal the original flag, as the decoding process reverses the bit manipulation and concatenation done during the encoding.
 
 This process ensures that we recover the original string that was obfuscated using the provided Python code.
-

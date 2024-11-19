@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Pw Crack 5
 
 ## Solution
@@ -7,4 +9,3 @@ One possible solution could involve writing a custom exploit to execute the scri
 
 The injected code simply adds a loop within the `password_check` function, brute-forcing it by trying every possible password from the dictionary.  
 As simple as that!
-

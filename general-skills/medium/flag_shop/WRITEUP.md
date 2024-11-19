@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Flag Shop
 
 ## Solution
@@ -95,4 +97,3 @@ To find the minimum value of `number_flags` we must input to cause the overflow:
 That's it! We get *exactly* the same number as calculated by the program for the `total_cost` if we insert `2386164` (Could have been any number) as our input ;)
 
 If the input exceeds the maximum value, a negative number will be stored in `total_cost` (loads of 1s in the beginning!), and since there is no condition to check it, once we check the balance, we will have a huge number! :)
-

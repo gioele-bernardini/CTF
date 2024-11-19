@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Writeup
 
 ## Explanation
@@ -64,4 +66,3 @@ To automate the guessing process and interact with the challenge program, we can
 ### Final Thoughts
 
 This challenge was a great exercise in applying binary search to an interactive guessing game. The constraint of 10 attempts made it clear that the problem required a logarithmic approach to find the number efficiently. Whether using C for manual interaction or Python with libraries like `pexpect` or `pwntools` for automation, binary search is the optimal solution for this problem.
-

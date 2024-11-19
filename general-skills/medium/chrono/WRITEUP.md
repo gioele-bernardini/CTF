@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Chrono
 
 ## Solution
@@ -20,4 +22,3 @@ When searching for something like *"interval jobs Linux check"* (a suboptimal qu
 
 ### Moral of the story:  
 Don't give up, and use your brain!  
-

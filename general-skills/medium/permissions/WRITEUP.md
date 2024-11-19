@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Permissions
 
 ## Solution
@@ -51,4 +53,3 @@ cat /root/.flag.txt
 ```
 
 And that's it! 🎉  
-

@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Solution
 
 ## Explanation
@@ -13,4 +15,3 @@ fi
 ```
 
 This way, the brute force script identifies the last known good commit based on successful execution.
-

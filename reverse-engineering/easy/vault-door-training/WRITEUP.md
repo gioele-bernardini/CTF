@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Writeup
 
 ## Explanation
@@ -75,4 +77,3 @@ In this example, the password is stored securely in an environment variable (`VA
 ### Conclusion
 
 **Hard-coding passwords** is an insecure practice that can lead to severe consequences if the code is leaked. Developers should always use secure methods for managing sensitive information, such as environment variables or secrets management tools, to minimize the risk of unauthorized access. With the increasing frequency of code leaks and security breaches in 2024, adopting these best practices is more critical than ever.
-

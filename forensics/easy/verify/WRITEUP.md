@@ -1,3 +1,5 @@
+[OBSOLETE WRITEUP]
+
 # Writeup
 
 ## Explanation
@@ -14,4 +16,3 @@ In our solution, **awk** is used to filter the output from `sha256sum`, which re
 ```
 
 Lastly, if you're running the decryption script locally, it's important to **modify the provided decryption file**. The script references the correct file using an absolute path on the server (e.g., `/home/ctf-player/drop-in/..etc`), which won't match your local folder structure. You should change this to use either the file's **basename** or its **relative path** for your local environment.
-
