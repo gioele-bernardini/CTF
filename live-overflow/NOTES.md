@@ -32,6 +32,22 @@ db
 : dc
 s, shift s
 
+# keygen video
+
+aaa
+s sym.main
+pdf
+ood <wrong_key>
+db <cmp>
+dc
+dr
+dr rip = <printa il success>
+
+trovare il loop
+afvm previos name i
+
+<python script per il keygen>
+
 
 ## STRIPPED BINARY
 info files

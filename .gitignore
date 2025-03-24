@@ -1,6 +1,7 @@
 a.out
 
 files/
+env/
 
 # general/easy/endianness
 flag
