@@ -5,6 +5,10 @@ env/
 
 # general/easy/endianness
 flag
+vuln
+glibc/
+*.zip
+*.png
 
 # TODO:
 # add a script to automatically adding to .gitignore
